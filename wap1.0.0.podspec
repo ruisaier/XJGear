@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "wap"
+  spec.name         = "wap1.0.0"
   spec.version      = "1.0.0"
   spec.summary      = "A short description of wap."
 
