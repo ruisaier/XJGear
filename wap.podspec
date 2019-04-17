@@ -25,6 +25,7 @@ Pod::Spec.new do |spec|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = <<-DESC
+  wap sdk
                    DESC
 
   spec.homepage     = "https://github.com/ruisaier/XJGear"
@@ -63,7 +64,7 @@ Pod::Spec.new do |spec|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  spec.platform     = :ios
+  # spec.platform     = :ios
   spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
@@ -90,9 +91,9 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "wap", "wap/wap/*.{h,m}"
-  spec.vendored_libraries  = 'wap/wap/*.a'
-  spec.public_header_files = 'wap/wap/*.h'
+  spec.source_files  = "wap", "wap/*.h"
+  spec.vendored_libraries  = 'wap/*.a'
+  spec.public_header_files = 'wap/*.h'
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -122,7 +123,7 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
-  s.libraries           = 'z','resolv'
+  spec.libraries           = 'z','resolv'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
